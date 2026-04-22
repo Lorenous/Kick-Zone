@@ -24,10 +24,10 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
           Positioned.fill(
             child: Image.asset(
               AppImages.imagesSplashBackground,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
           ),
-          Container(color: Colors.black.withAlpha(120)),
+          Container(color: Colors.black.withAlpha(100)),
           Positioned(
             bottom: 150,
             top: 0,
