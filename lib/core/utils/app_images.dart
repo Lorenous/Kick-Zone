@@ -18,6 +18,10 @@ class AppImages {
   /// assets/images/auth_top.png
   static const String imagesAuthTop = "assets/images/auth_top.png";
 
+  /// Assets for imagesCheck
+  /// assets/images/check.svg
+  static const String imagesCheck = "assets/images/check.svg";
+
   /// Assets for imagesCoach
   /// assets/images/coach.png
   static const String imagesCoach = "assets/images/coach.png";

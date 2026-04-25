@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kick_zone/core/utils/app_images.dart';
+import 'package:kick_zone/features/auth/presentation/screens/signup_personal_infro_screen.dart';
 import 'package:kick_zone/features/auth/presentation/widgets/user_type_item.dart';
 
 class UserTypeGridView extends StatefulWidget {
@@ -10,7 +11,7 @@ class UserTypeGridView extends StatefulWidget {
 }
 
 class _UserTypeGridViewState extends State<UserTypeGridView> {
-  int selectedIndex = 0;
+  int selectedIndex = -1;
 
   @override
   Widget build(BuildContext context) {
@@ -25,18 +26,23 @@ class _UserTypeGridViewState extends State<UserTypeGridView> {
       ),
       itemCount: 4,
       itemBuilder: (context, index) {
-        final images = [
+        final List<String> images = [
           AppImages.imagesPlayer,
           AppImages.imagesCoach1,
           AppImages.imagesAcademy1,
           AppImages.imagesStadium1,
         ];
-        final titles = ['Player', 'Coach', 'Academy', 'Stadium'];
+        final List<String> titles = ['Player', 'Coach', 'Academy', 'Stadium'];
         return GestureDetector(
           onTap: () {
             setState(() {
               selectedIndex = index;
             });
+            Navigator.pushNamed(
+              context,
+              SignupPersonalInfoScreen.routeName,
+              arguments: titles[index],
+            );
           },
           child: UserTypeItem(
             image: images[index],
