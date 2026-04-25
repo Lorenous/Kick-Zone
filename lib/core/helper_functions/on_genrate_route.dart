@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kick_zone/features/auth/presentation/screens/signin_screen.dart';
+import 'package:kick_zone/features/auth/presentation/screens/signup_screen.dart';
 import 'package:kick_zone/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:kick_zone/features/splash/presentation/screens/splash_screen.dart';
 
@@ -11,6 +12,8 @@ Route? onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const OnboardingScreen());
     case SigninScreen.routeName:
       return MaterialPageRoute(builder: (context) => const SigninScreen());
+    case SignupScreen.routeName:
+      return MaterialPageRoute(builder: (context) => const SignupScreen());
     default:
       return null;
   }

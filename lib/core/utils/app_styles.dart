@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 class AppStyles {
-  static const TextStyle bols32 = TextStyle(
+  static const TextStyle bold32 = TextStyle(
     fontSize: 32,
     fontWeight: FontWeight.w700,
+    color: Colors.white,
+  );
+  static const TextStyle semiBold32 = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.w600,
     color: Colors.white,
   );
   static const TextStyle medium16 = TextStyle(

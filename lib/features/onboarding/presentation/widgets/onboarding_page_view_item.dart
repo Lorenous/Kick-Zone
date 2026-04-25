@@ -31,7 +31,7 @@ class OnboardingPageViewItem extends StatelessWidget {
                 const SizedBox(height: 52),
                 Text(
                   title,
-                  style: AppStyles.bols32,
+                  style: AppStyles.bold32,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 42),

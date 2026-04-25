@@ -27,6 +27,7 @@ class _OnboardingScreenBodyState extends State<OnboardingScreenBody> {
 
   @override
   void dispose() {
+    _pageController.removeListener(() {});
     _pageController.dispose();
     super.dispose();
   }

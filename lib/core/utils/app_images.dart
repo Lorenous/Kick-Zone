@@ -6,6 +6,10 @@ class AppImages {
   /// assets/images/academy.png
   static const String imagesAcademy = "assets/images/academy.png";
 
+  /// Assets for imagesAcademy1
+  /// assets/images/academy1.png
+  static const String imagesAcademy1 = "assets/images/academy1.png";
+
   /// Assets for imagesArrowBack
   /// assets/images/arrow_back.png
   static const String imagesArrowBack = "assets/images/arrow_back.png";
@@ -17,6 +21,10 @@ class AppImages {
   /// Assets for imagesCoach
   /// assets/images/coach.png
   static const String imagesCoach = "assets/images/coach.png";
+
+  /// Assets for imagesCoach1
+  /// assets/images/coach1.png
+  static const String imagesCoach1 = "assets/images/coach1.png";
 
   /// Assets for imagesFacebook
   /// assets/images/facebook.svg
@@ -38,6 +46,10 @@ class AppImages {
   /// assets/images/onboarding_background3.png
   static const String imagesOnboardingBackground3 = "assets/images/onboarding_background3.png";
 
+  /// Assets for imagesPlayer
+  /// assets/images/player.png
+  static const String imagesPlayer = "assets/images/player.png";
+
   /// Assets for imagesSplashBackground
   /// assets/images/splash_background.png
   static const String imagesSplashBackground = "assets/images/splash_background.png";
@@ -49,6 +61,10 @@ class AppImages {
   /// Assets for imagesSplashUpCenter
   /// assets/images/splash_up_center.png
   static const String imagesSplashUpCenter = "assets/images/splash_up_center.png";
+
+  /// Assets for imagesStadium1
+  /// assets/images/stadium1.png
+  static const String imagesStadium1 = "assets/images/stadium1.png";
 
   /// Assets for imagesStaduim
   /// assets/images/staduim.png
