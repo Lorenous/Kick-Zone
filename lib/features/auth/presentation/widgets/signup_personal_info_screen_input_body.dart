@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kick_zone/core/utils/app_styles.dart';
 import 'package:kick_zone/core/widgets/custom_button.dart';
+import 'package:kick_zone/features/auth/presentation/screens/signup_add_photo_screen.dart';
 import 'package:kick_zone/features/auth/presentation/widgets/personal_info_form.dart';
 import 'package:kick_zone/features/auth/presentation/widgets/terms_and_policy.dart';
 import 'package:kick_zone/features/auth/presentation/widgets/already_have_account.dart';
@@ -25,7 +26,12 @@ class SignupPersonalInfoScreenInputBody extends StatelessWidget {
           child: TermsAndPolicy(),
         ),
         const SizedBox(height: 20),
-        const CustomButton(text: 'sign up'),
+        CustomButton(
+          text: 'sign up',
+          onPressed: () {
+            Navigator.pushNamed(context, SignupAddPhotoScreen.routeName);
+          },
+        ),
         const SizedBox(height: 2),
         const AlreadyHaveAccount(),
       ],

@@ -2,18 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:kick_zone/core/utils/app_styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.text});
+  const CustomButton({
+    super.key,
+    required this.text,
+    this.onPressed,
+    this.backgroundColor = const Color(0xff72951E),
+    this.textColor = Colors.white,
+  });
   final String text;
+  final void Function()? onPressed;
+  final Color? backgroundColor;
+  final Color? textColor;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 8),
-        backgroundColor: const Color(0xff72951E),
+        backgroundColor: backgroundColor,
       ),
-      child: Text(text, style: AppStyles.medium24),
+      child: Text(text, style: AppStyles.medium24.copyWith(color: textColor)),
     );
   }
 }

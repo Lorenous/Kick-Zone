@@ -18,6 +18,10 @@ class AppImages {
   /// assets/images/auth_top.png
   static const String imagesAuthTop = "assets/images/auth_top.png";
 
+  /// Assets for imagesCamera
+  /// assets/images/camera.png
+  static const String imagesCamera = "assets/images/camera.png";
+
   /// Assets for imagesCheck
   /// assets/images/check.svg
   static const String imagesCheck = "assets/images/check.svg";
@@ -37,6 +41,10 @@ class AppImages {
   /// Assets for imagesGoogle
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
+
+  /// Assets for imagesImageUpload
+  /// assets/images/image_upload.png
+  static const String imagesImageUpload = "assets/images/image_upload.png";
 
   /// Assets for imagesOnboardingBackground1
   /// assets/images/onboarding_background1.png

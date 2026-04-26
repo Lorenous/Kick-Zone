@@ -40,7 +40,7 @@ class SigninScreenInputBody extends StatelessWidget {
         const SizedBox(height: 4),
         const Align(alignment: Alignment.centerRight, child: ForgotPassword()),
         const SizedBox(height: 6),
-        const CustomButton(text: 'Login'),
+        CustomButton(text: 'Login', onPressed: () {}),
         const SizedBox(height: 8),
         const DontHaveAccount(),
         const SizedBox(height: 64),
